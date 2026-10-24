@@ -4,38 +4,36 @@
 An extensive and commented list of resources on late-interaction multivector retrieval.
 
 ## Contents
-- [Awesome Multivector Retrieval](#awesome-multivector-retrieval)
-	- [Contents](#contents)
-	- [Models](#models)
-		- [Foundational Models](#foundational-models)
-		- [General Models \& Training](#general-models--training)
-		- [Compression \& Token Pruning](#compression--token-pruning)
-		- [Multimodal \& Vision](#multimodal--vision)
-		- [Theory](#theory)
-	- [Retrieval](#retrieval)
-		- [Indexing \& Search Algorithms](#indexing--search-algorithms)
-		- [Scoring Kernels](#scoring-kernels)
-	- [Surveys, Analyses \& Reproducibility](#surveys-analyses--reproducibility)
-	- [Software Libraries](#software-libraries)
-		- [Training \& Inference Frameworks](#training--inference-frameworks)
-		- [Retrieval Engines \& Indexes](#retrieval-engines--indexes)
-		- [Scoring Kernels](#scoring-kernels-1)
-	- [Model Checkpoints](#model-checkpoints)
-		- [General-Purpose](#general-purpose)
-		- [Specialized / Domain](#specialized--domain)
-		- [Multimodal \& Vision](#multimodal--vision-1)
-	- [Datasets and Encodings](#datasets-and-encodings)
-		- [`NFCorpus`](#nfcorpus)
-		- [`SciFact`](#scifact)
-		- [`ArguAna`](#arguana)
-		- [`SCIDOCS`](#scidocs)
-		- [`FiQA-2018`](#fiqa-2018)
-		- [`TREC-COVID`](#trec-covid)
-		- [`Quora`](#quora)
-		- [`LoTTE-pooled`](#lotte-pooled)
-		- [`MS MARCO v1`](#ms-marco-v1)
-		- [`ViDoRe v3`](#vidore-v3)
-	- [Multimedia Resources](#multimedia-resources)
+- [Models](#models)
+	- [Foundational Models](#foundational-models)
+	- [General Models \& Training](#general-models--training)
+	- [Compression \& Token Pruning](#compression--token-pruning)
+	- [Multimodal \& Vision](#multimodal--vision)
+	- [Theory](#theory)
+- [Retrieval](#retrieval)
+	- [Indexing \& Search Algorithms](#indexing--search-algorithms)
+	- [Scoring Kernels](#scoring-kernels)
+- [Surveys, Analyses \& Reproducibility](#surveys-analyses--reproducibility)
+- [Software Libraries](#software-libraries)
+	- [Training \& Inference Frameworks](#training--inference-frameworks)
+	- [Retrieval Engines \& Indexes](#retrieval-engines--indexes)
+	- [Scoring Kernels](#scoring-kernels-1)
+- [Model Checkpoints](#model-checkpoints)
+	- [General-Purpose](#general-purpose)
+	- [Specialized / Domain](#specialized--domain)
+	- [Multimodal \& Vision](#multimodal--vision-1)
+- [Datasets and Encodings](#datasets-and-encodings)
+	- [`NFCorpus`](#nfcorpus)
+	- [`SciFact`](#scifact)
+	- [`ArguAna`](#arguana)
+	- [`SCIDOCS`](#scidocs)
+	- [`FiQA-2018`](#fiqa-2018)
+	- [`TREC-COVID`](#trec-covid)
+	- [`Quora`](#quora)
+	- [`LoTTE-pooled`](#lotte-pooled)
+	- [`MS MARCO v1`](#ms-marco-v1)
+	- [`ViDoRe v3`](#vidore-v3)
+- [Multimedia Resources](#multimedia-resources)
 
 ## Models
 
@@ -122,6 +120,11 @@ An extensive and commented list of resources on late-interaction multivector ret
 	Abdelrahman Abdallah, Mohammed Ali, Adam Jatowt<br>
 	EMNLP, 2026<br>
 	📄 [paper](https://arxiv.org/abs/2609.29652) | 🛠️ [code](https://github.com/DataScienceUIBK/SmallReason-ColBERT)
+
+- *UIBK-Embedding-v1: A Dense and a Late-Interaction Retriever in One Model, One Index and One Search*<br>
+	Abdelrahman Abdallah<br>
+	Blog, 2026<br>
+	📝 [blog](https://huggingface.co/blog/abdoelsayed/uibk-embedding-v1)
 
 ### Compression & Token Pruning
 
@@ -264,6 +267,11 @@ An extensive and commented list of resources on late-interaction multivector ret
 	Sungguk Cha, DongWook Kim, Mintae Kim, Youngsub Han, Byoung-Ki Jeon, Sangyeob Lee<br>
 	arXiv, 2026<br>
 	📄 [paper](https://arxiv.org/abs/2601.07125)
+
+- *Most MaxSim Winners Flip, Retrieval Survives: Low-Margin Substitution in Sign-Coded Late Interaction*<br>
+	Anirudh Lakhotia, Nischal Helagally Shantharaju<br>
+	ReNeuIR Workshop, 2026<br>
+	📄 [paper](https://anirudhlakhotia.com/assets/pdf/subbit_multivector_retrieval.pdf) | 🛠️ [code](https://github.com/anirudhlakhotia/subbit-multivector-retrieval)
 
 ### Multimodal & Vision
 
@@ -552,6 +560,9 @@ An extensive and commented list of resources on late-interaction multivector ret
 - [sebastian-hofstaetter/colberter-128-32-msmarco](https://huggingface.co/sebastian-hofstaetter/colberter-128-32-msmarco) / [sebastian-hofstaetter/uni-colberter-128-1-msmarco](https://huggingface.co/sebastian-hofstaetter/uni-colberter-128-1-msmarco)<br>
 	*ColBERTer checkpoints trained on MS MARCO (128-dim, with 32 and 1 unique whole-word vectors per document respectively).*
 
+- [DataScience-UIBK/uibk-embedding-v1](https://huggingface.co/DataScience-UIBK/uibk-embedding-v1)<br>
+	*English hybrid retriever (179M, ModernBERT-based) that stores its dense embedding inside the 128-dim token-vector list, so one MaxSim search over one index scores both, reporting 59.79 average nDCG@10 on BEIR.*
+
 ### Specialized / Domain
 
 - [lightonai/LateOn-Code](https://huggingface.co/lightonai/LateOn-Code)<br>
@@ -597,6 +608,9 @@ An extensive and commented list of resources on late-interaction multivector ret
 
 - [perplexity-ai/pplx-embed-v2-late-9b](https://huggingface.co/perplexity-ai/pplx-embed-v2-late-9b)<br>
 	*9B multimodal late-interaction retriever on Qwen3.5 with 128-dim token vectors, distilled from an 18B ColBERT teacher.*
+
+- [athrael-soju/ColUltraVBERT](https://huggingface.co/athrael-soju/ColUltraVBERT)<br>
+	*255M visual document retriever fine-tuned from UltraVBERT on VDR Train 500k, with 768-dim token vectors truncatable to 128–512 dims (Matryoshka).*
 
 ## Datasets and Encodings
 
