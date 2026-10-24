@@ -3,6 +3,8 @@
 
 An extensive and commented list of resources on late-interaction multivector retrieval.
 
+<p align="left"><img src="images/awesome-multivector-retrieval-logo.svg" width="220" alt="Awesome Multivector Retrieval logo"/></p>
+
 ## Contents
 - [Models](#models)
 	- [Foundational Models](#foundational-models)
