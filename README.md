@@ -585,6 +585,9 @@ An extensive and commented list of resources on late-interaction multivector ret
 - [DataScience-UIBK/SmallReason-ColBERT-32M](https://huggingface.co/DataScience-UIBK/SmallReason-ColBERT-32M)<br>
 	*Ultra-small reasoning retriever (32M, mxbai-edge-colbert-v0-32m-based) with a query-side token-importance head, reporting 21.41 mean nDCG@10 on BRIGHT; load via `WeightedColBERT.from_base()`, as plain PyLate loading drops the head.*
 
+- [runelab-ai/Vor-LateEmbed-TR-0.6B-v1](https://huggingface.co/runelab-ai/Vor-LateEmbed-TR-0.6B-v1)<br>
+	*Turkish late-interaction retriever (0.6B, fine-tuned from perplexity-ai/pplx-embed-v2-late-0.6b), reporting 38.17 average nDCG@10 on the five TurkColBERT Turkish test sets, up from 36.54 for its base model.*
+
 ### Multimodal & Vision
 
 - [vidore/colpali-v1.3](https://huggingface.co/vidore/colpali-v1.3)<br>
