@@ -408,6 +408,16 @@ An extensive and commented list of resources on late-interaction multivector ret
 	arXiv, 2026<br>
 	📄 [paper](https://arxiv.org/abs/2608.23553)
 
+- *GEM: A Native Graph-based Index for Multi-Vector Retrieval*<br>
+	Yao Tian, Zhoujin Tian, Xi Zhao, Ruiyuan Zhang, Xiaofang Zhou<br>
+	SIGMOD, 2026<br>
+	📄 [paper](https://arxiv.org/abs/2603.20336) | 🛠️ [code](https://github.com/sigmod26gem/sigmod26gem)
+
+- *MV-IVF: Multi-Vector Retrieval via Multi-Vector Clustering*<br>
+	Kishen N Gowda, Laxman Dhulipala, Lars Gottesbüren, Rajesh Jayaram<br>
+	arXiv, 2026<br>
+	📄 [paper](https://arxiv.org/abs/2611.09040)
+
 ### Scoring Kernels
 
 - *Col-Bandit: Query-Time Top-K Estimation for Late-Interaction Retrieval*<br>
@@ -510,6 +520,9 @@ An extensive and commented list of resources on late-interaction multivector ret
 
 - [TopK](https://github.com/topk-io/topk) <img src="images/rust-logo.png" height="22" alt="Rust"/> <img src="images/python-logo.svg" height="16" alt="Python"/><br>
 	*Managed retrieval engine with support for late-interaction search over billions of documents, online index updates, filtering, and more.*
+
+- [GEM](https://github.com/sigmod26gem/sigmod26gem) <img src="images/cpp-logo.svg" height="20" alt="C++"/><br>
+	*Official C++ implementation for GEM: a native proximity-graph index built over vector sets for multi-vector retrieval.*
 
 ### Scoring Kernels
 
