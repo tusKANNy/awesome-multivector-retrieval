@@ -312,6 +312,11 @@ An extensive and commented list of resources on late-interaction multivector ret
 	Blog, 2026<br>
 	📝 [blog](https://www.perplexity.ai/hub/blog/multimodal-embeddings-beyond-a-single-vector)
 
+- *WavLate: Audio Retrieval goes Multi-Vector*<br>
+	Aarush<br>
+	Blog, 2026<br>
+	📝 [blog](https://huggingface.co/blog/chungimungi/wavlate-audio-retrieval-goes-multi-vector)
+
 ### Theory
 
 - *Multi-Vector Embeddings are Provably More Expressive than Single Vector Embeddings*<br>
@@ -629,6 +634,9 @@ An extensive and commented list of resources on late-interaction multivector ret
 
 - [athrael-soju/ColUltraVBERT](https://huggingface.co/athrael-soju/ColUltraVBERT)<br>
 	*255M visual document retriever fine-tuned from UltraVBERT on VDR Train 500k, with 768-dim token vectors truncatable to 128–512 dims (Matryoshka).*
+
+- [chungimungi/WavLate](https://huggingface.co/chungimungi/WavLate)<br>
+	*Audio–text late-interaction retriever (344M: HTS-AT audio tower from MGA-CLAP, mLateOn text tower), with 128-dim vectors per caption token and per ~0.31 s audio frame, reporting 37.9 mean R@1 on AudioCaps and Clotho.*
 
 ## Datasets and Encodings
 
